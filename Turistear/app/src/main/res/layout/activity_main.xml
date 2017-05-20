@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/base7917161_284243518671785_2065382718720131866_o"
+    android:orientation="vertical"
+    tools:context="com.example.gaby.turistear.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    style="@android:style/Widget.TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:text="Elije una o varias categorias segun tus gustos"
+                    android:textColor="?android:attr/colorBackground"
+                    android:textSize="19sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="178dp"
+                    android:layout_height="35dp"
+                    android:background="@color/colo1"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/aeropuerto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:onClick="seleccionar"
+                        android:text="Aeropuerto" />
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/avion" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="178dp"
+                    android:layout_height="35dp"
+                    android:background="@color/color2"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/bancos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:onClick="seleccionar"
+                        android:text="Bancos" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/banco" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="180dp"
+                    android:layout_height="35dp"
+                    android:background="@color/color3"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/bares"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:onClick="seleccionar"
+                        android:text="Bares - Discotecas" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/bares" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="178dp"
+                    android:layout_height="35dp"
+                    android:background="@color/color4"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cementerios"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:onClick="seleccionar"
+                        android:text="Cementerios" />
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="34dp"
+                        android:paddingLeft="3dp"
+                        app:srcCompat="@mipmap/cementerio" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="178dp"
+                    android:layout_height="35dp"
+                    android:background="@color/color5"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cines"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:onClick="seleccionar"
+                        android:text="Cines" />
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        app:srcCompat="@mipmap/cine" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="178dp"
+                    android:layout_height="35dp"
+                    android:background="@color/color6"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/farmacias"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:onClick="seleccionar"
+                        android:text="Farmacias" />
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="34dp"
+                        app:srcCompat="@mipmap/farmacia" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="178dp"
+                    android:layout_height="35dp"
+                    android:background="@color/color7"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/hospitales"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:onClick="seleccionar"
+                        android:text="Hospitales" />
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:paddingLeft="3dp"
+                        app:srcCompat="@mipmap/hospital" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="178dp"
+                    android:layout_height="35dp"
+                    android:background="@color/color8"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/hoteles"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:onClick="seleccionar"
+                        android:text="Hoteles" />
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="3dp"
+                        app:srcCompat="@mipmap/hotel" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="178dp"
+                    android:layout_height="35dp"
+                    android:background="@color/color9"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/museos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:onClick="seleccionar"
+                        android:text="Museos" />
+
+                    <ImageView
+                        android:id="@+id/imageView12"
+                        android:layout_width="36dp"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@mipmap/museos" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:accessibilityLiveRegion="none"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="178dp"
+                    android:layout_height="35dp"
+                    android:background="@color/color10"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/parquesPublicos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:onClick="seleccionar"
+                        android:text="Parques Públicos" />
+
+                    <ImageView
+                        android:id="@+id/imageView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="3dp"
+                        app:srcCompat="@mipmap/parque" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="178dp"
+                    android:layout_height="35dp"
+                    android:background="@color/color11"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/restaurantes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:onClick="seleccionar"
+                        android:text="Restaurantes" />
+
+                    <ImageView
+                        android:id="@+id/rest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@mipmap/resta" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="178dp"
+                    android:layout_height="35dp"
+                    android:background="@color/color12"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+
+                    <CheckBox
+                        android:id="@+id/teatros"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:onClick="seleccionar"
+                        android:text="Teatros" />
+
+                    <ImageView
+                        android:id="@+id/imageView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@mipmap/teatro" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="178dp"
+                    android:layout_height="35dp"
+                    android:background="@color/color13"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/universidades"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:onClick="seleccionar"
+                        android:text="Universidades" />
+
+                    <ImageView
+                        android:id="@+id/imageView17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@mipmap/universidad" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="30dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="70dp"
+                        android:background="@color/colorB1"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"></LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/imageB1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@mipmap/bt2" />
+
+                        <Button
+                            android:id="@+id/verTabla"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorB1"
+                            android:text="Ver Sitios" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorB1"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/mapa"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/colorB1"
+                            android:text="Siguiente" />
+
+                        <ImageView
+                            android:id="@+id/imageB2"
+                            android:layout_width="26dp"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@mipmap/bt1" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
